@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
@@ -160,6 +160,7 @@ tab-contents ul li {
     display: block;
 }
 
+
 /*------------------------- Services -------------------------*/
 #services {
     padding: 30px 0px;
@@ -278,7 +279,7 @@ tab-contents ul li {
 
 .btn {
     display: block;
-    margin: 50px auto;
+    margin: 30px auto;
     width: fit-content;
     border: 1px solid #00BFBF;
     padding: 14px 50px;
@@ -306,6 +307,7 @@ tab-contents ul li {
 
 }
 
+
 .contact-left p i {
     color: #00BFBF;
     margin-right: 15px;
@@ -314,6 +316,7 @@ tab-contents ul li {
 
 .social-icon {
     margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .social-icon a {
@@ -369,6 +372,41 @@ form .btn2 {
 }
 
 
+#github-card{
+    margin: 50px 0px ;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+#github-card {
+    animation: fadeIn 5s ease-out forwards;
+    opacity: 0; /* Starte unsichtbar */
+    /* Reserviere Platz für die GitHub-Karte */
+    min-height: 313px; /* Beispielhöhe */
+    width: 100%; /* oder eine feste Breite nach Bedarf */
+    background-color: #000; /* Hintergrundfarbe, optional */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.github-card {
+    /* Stil für das GitHub-Card-Element, wenn geladen */
+    width: 100%; /* passt die Breite an den Container an */
+    max-width: 1000px; /* oder eine spezifische Maximalbreite */
+    /* Weitere Stile nach Bedarf */
+}
+
+
+
 /* ------------------------------ CSS for small screens ----------------------------- */
 
 nav .fa-solid {
@@ -384,6 +422,9 @@ nav .fa-solid {
     .header-text {
         margin-top: 100%;
         font-size: 16px;
+        position: absolute;
+        bottom: 50px;
+        left: 0
     }
 
     .header-text h1 {
@@ -395,7 +436,7 @@ nav .fa-solid {
         font-size: 25px;
     }
 
-    nav ul{
+    nav ul {
         background: #00BFBF;
         position: fixed;
         top: 0;
@@ -412,39 +453,41 @@ nav .fa-solid {
         margin: 25px;
     }
 
-    nav ul .fa-solid{
+    nav ul .fa-solid {
         position: absolute;
         top: 25px;
         left: 25px;
         cursor: pointer;
     }
 
-    .sub-title{
+    .sub-title {
         font-size: 40px;
     }
 
-    .about-col-1, .about-col-2{
+    .about-col-1,
+    .about-col-2 {
         flex-basis: 100%;
     }
 
-    .about-col-1{
+    .about-col-1 {
         margin-bottom: 30px;
     }
 
-    .about-col-2{
+    .about-col-2 {
         font-size: 14px;
     }
 
-    .tab-links{
+    .tab-links {
         font-size: 16px;
         margin-right: 20px;
     }
 
-    .contact-left, .contact-right{
+    .contact-left,
+    .contact-right {
         flex-basis: 100%;
     }
 
-    .copyright{
+    .copyright {
         font-size: 14px;
     }
 }
