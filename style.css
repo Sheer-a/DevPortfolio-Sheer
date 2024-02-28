@@ -70,6 +70,7 @@ nav ul li a:hover::after {
 .header-text {
     margin-top: 20%;
     font-size: 30px;
+    
 }
 
 .header-text h1 {
@@ -81,6 +82,16 @@ nav ul li a:hover::after {
     color: #00BFBF;
 }
 
+header {
+    position: relative; /* Macht diesen zum Bezugspunkt für absolute Positionierung */
+}
+
+.header-text {
+    position: absolute; /* Ermöglicht spezifische Platzierung innerhalb des Headers */
+    bottom: 0; /* Am unteren Rand des Headers */
+    left: 0; /* Am linken Rand des Headers */
+    margin: 20px; /* Optional: Abstand zum Rand hinzufügen */
+}
 
 /*-------------------------About Me-------------------------*/
 #about {
@@ -422,9 +433,7 @@ nav .fa-solid {
     .header-text {
         margin-top: 100%;
         font-size: 16px;
-        position: absolute;
-        bottom: 50px;
-        left: 0
+        
     }
 
     .header-text h1 {
